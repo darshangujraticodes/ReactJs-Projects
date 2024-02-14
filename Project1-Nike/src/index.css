@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-section {
+  @apply container mx-auto;
+}
+
+.nav-btn {
+  @apply bg-[#D01C28] text-white py-2 px-3 rounded;
+}
+
+.page-btn {
+  @apply bg-[#D01C28] border-2 border-[#D01C28] text-white text-xl 
+  rounded px-3 py-2 font-semibold  hover:border-black hover:text-black hover:bg-white;
+}
+
+.page-btn2 {
+  @apply text-black border-2 border-black text-xl rounded px-3 py-2 font-semibold;
+}
+
+.toggle-btn {
+  @apply bg-[#262626] text-white py-2 px-3 rounded;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero Content */
+.hero-heading {
+  @apply text-[60px] leading-[55px]  lg:text-[108px] lg:leading-[102px] font-bold uppercase;
+}
+
+.hero-text {
+  @apply lg:text-xl uppercase font-semibold text-[#5A5959];
+}
