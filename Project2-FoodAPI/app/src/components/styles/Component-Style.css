@@ -1,0 +1,67 @@
+.header-wrapper {
+  background: #262626;
+}
+
+.img-logo {
+  width: 150px;
+}
+
+.click-btn {
+  background: #ffc24b !important;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.searchBar {
+  color: #262626;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+
+.HeroSection-Wrap {
+  background-image: url("../../assets/Foodapi-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+.card-wrap {
+  margin: 20px 10px;
+  /* background: #f5f5f5; */
+  color: #fff;
+  padding: 20px 10px;
+  border-radius: 8px;
+
+  width: 530px;
+  height: auto;
+  border-image-source: radial-gradient(
+      80.69% 208.78% at 108.28% 112.58%,
+      #eabfff 0%,
+      rgba(135, 38, 183, 0) 100%
+    ),
+    radial-gradient(
+      80.38% 222.5% at -13.75% -12.36%,
+      #98f9ff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+  background: url(.png),
+    radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(165, 239, 255, 0.2) 0%,
+      rgba(110, 191, 244, 0.0447917) 77.08%,
+      rgba(70, 144, 213, 0) 100%
+    );
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(13.1842px);
+
+  border: 2px solid #fff;
+}
