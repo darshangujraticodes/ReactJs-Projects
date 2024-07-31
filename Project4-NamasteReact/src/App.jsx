@@ -52,9 +52,10 @@ function App() {
           {/* left content */}
           <div className="leftContentWrap  w-full  md:w-1/2">
             <h1 className="  text-4xl md:text-6xl leading-snug md:leading-tight  text-center  md:text-left    font-bold mb-7 text-[#283054] ">
-              Bring everyone together to build better products.
+              Bring everyone <span className="   block  "></span> together to
+              build <span className="   block  "></span> better products.
             </h1>
-            <p className="mb-7  ptext  text-center  md:text-left  text-[#949396] ">
+            <p className="mb-7 px-4 md:px-0 ptext leading-normal text-center  md:text-left  text-[#949396] ">
               Manage make it simple for softwate teams{" "}
               <span className="   md:block  "></span> to plan day-to-day tasks
               while keeping the <span className="  md:block  "></span> larger

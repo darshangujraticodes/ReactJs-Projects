@@ -14,7 +14,7 @@
 }
 
 .ptext {
-  @apply text-[#949396]  text-xl  md:text-2xl;
+  @apply text-[#949396]  text-xl  md:text-xl;
 }
 
 .btn {
