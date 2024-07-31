@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+
+.sectionPadding {
+  @apply py-[30px] md:py-[45px] lg:py-[80px];
+}
+
+.topPadding {
+  @apply pt-[30px] md:pt-[45px] lg:pt-[80px];
+}
+
+.bottomPadding {
+  @apply pb-[30px] md:pb-[45px] lg:pb-[80px];
+}
+
+.ptext {
+  @apply text-[#949396]  text-xl  md:text-2xl;
+}
+
+.btn {
+  @apply bg-[#E25E38] text-white px-5 py-3 rounded-full;
+}
+
+@tailwind utilities;
+
+/* note there are 2 types of css update @apply and @layers */
