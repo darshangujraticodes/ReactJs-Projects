@@ -13,6 +13,26 @@
   @apply pb-[30px] md:pb-[45px] lg:pb-[80px];
 }
 
+.row {
+  @apply flex flex-wrap;
+}
+
+.col3 {
+  @apply w-full  md:w-1/4 px-3 py-3;
+}
+
+.col4 {
+  @apply w-full md:w-1/2 lg:w-2/6 px-3 py-3;
+}
+
+.col6 {
+  @apply w-full md:w-1/2 px-3 py-3;
+}
+
+.imgFluid {
+  @apply w-full h-auto;
+}
+
 .ptext {
   @apply text-[#949396]  text-xl  md:text-xl;
 }
