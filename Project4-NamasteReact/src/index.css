@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 
+/* common css */
+
 .sectionPadding {
   @apply py-[30px] md:py-[45px] lg:py-[80px];
 }
@@ -32,6 +34,8 @@
 .imgFluid {
   @apply w-full h-auto;
 }
+
+/* ------- */
 
 .ptext {
   @apply text-[#949396]  text-xl  md:text-xl;
