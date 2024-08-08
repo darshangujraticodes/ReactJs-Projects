@@ -1,7 +1,19 @@
 @tailwind base;
 @tailwind components;
 
+@font-face {
+  font-family: gilroyFont;
+  src: url(./assets/fonts//Gilroy-SemiBold.ttf);
+}
+
 /* common css */
+
+:root {
+  --orange: #e26030;
+  --black: rgba(2, 6, 12, 0.92);
+  --light-gray: rgba(2, 6, 12, 0.6);
+  font-family: gilroyFont;
+}
 
 .sectionPadding {
   @apply py-[30px] md:py-[45px] lg:py-[80px];
@@ -43,6 +55,10 @@
 
 .btn {
   @apply bg-[#E25E38] text-white px-5 py-3 rounded-full;
+}
+
+.dividerLine {
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 @tailwind utilities;
