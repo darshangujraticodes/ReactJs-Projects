@@ -5,7 +5,7 @@ import "./componentStyles/navbarStyles.css";
 function HeaderSection() {
   return (
     <>
-      <nav className="navbarSection fixed top-0 right-0 left-0  z-50 mx-auto">
+      <nav className="navbarSection bg-white fixed top-0 right-0 left-0  z-50 mx-auto">
         <div className="container mx-auto">
           <div className="navbarWrap py-2">
             <div className="logoWrap">

@@ -9,6 +9,13 @@ import dish7 from "../assets/swiggy/dishes/dish7.jpeg";
 import dish8 from "../assets/swiggy/dishes/dish8.jpeg";
 import dish9 from "../assets/swiggy/dishes/dish9.jpeg";
 
+import restpic1 from "../assets/swiggy/restaurant/pic1.jpeg";
+import restpic2 from "../assets/swiggy/restaurant/pic2.jpeg";
+import restpic3 from "../assets/swiggy/restaurant/pic3.jpeg";
+import restpic4 from "../assets/swiggy/restaurant/pic4.jpeg";
+import restpic5 from "../assets/swiggy/restaurant/pic5.jpeg";
+import restpic6 from "../assets/swiggy/restaurant/pic6.jpeg";
+
 // Import Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,6 +28,25 @@ import "swiper/css/scrollbar";
 import RestaurantCard from "./RestaurantCard";
 
 function BodySection() {
+  /*
+  Learning Point : Config driven UI
+  It is the best industry practice when data need to reflected in website as per different location parameter 
+  eg swiggy, zomato, amazon or any dynamic sites
+
+  How it is useful ?
+  All company run different offers and special ad campaign on regional level which need to restricted to that particular city only and different offer program for different city are controlled though api.
+  
+  config api consits of segregation of section dedicated with region offer etc.
+  
+  eg. swiggy creat config ui using config api body section as follows 
+  1] regional offer listing 
+  2] regional restaurant listing
+  3] display type carousel, direct display, etc
+
+  1:46:19
+
+  */
+
   return (
     <>
       <div className="dishSection mt-[120px]  relative z-10">
@@ -36,6 +62,9 @@ function BodySection() {
               <Swiper
                 spaceBetween={30}
                 slidesPerView={7}
+                navigation={true}
+                modules={[Navigation]}
+                className="mySwiper"
                 onSlideChange={() => console.log("slide change")}
                 onSwiper={(swiper) => console.log(swiper)}
               >
@@ -103,29 +132,76 @@ function BodySection() {
             <div className="restuarantSliderWrap">
               <Swiper
                 slidesPerView={4}
+                navigation={true}
+                modules={[Navigation]}
                 onSlideChange={() => console.log("slide change")}
                 onSwiper={(swiper) => console.log(swiper)}
               >
                 <SwiperSlide>
-                  <RestaurantCard />
+                  <RestaurantCard
+                    foodImg={restpic1}
+                    foodName="Chinese Wok"
+                    foodRating="4.3"
+                    deliveryTime="30-35 mins"
+                    FoodContent="Chinese Manchurian, Soup & Noddles with Chicken Balls "
+                    location="Bandra East"
+                    offerText="30% Off upto ₹100"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <RestaurantCard />
+                  <RestaurantCard
+                    foodImg={restpic2}
+                    foodName="KFC"
+                    foodRating="4.3"
+                    deliveryTime="30-35 mins"
+                    FoodContent="Chinese Manchurian, Soup & Noddles with Chicken Balls "
+                    location="Bandra East"
+                    offerText="30% Off upto ₹100"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <RestaurantCard />
+                  <RestaurantCard
+                    foodImg={restpic3}
+                    foodName="MacDonald"
+                    foodRating="4.3"
+                    deliveryTime="30-35 mins"
+                    FoodContent="Chinese Manchurian, Soup & Noddles with Chicken Balls "
+                    location="Bandra East"
+                    offerText="30% Off upto ₹100"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <RestaurantCard />
+                  <RestaurantCard
+                    foodImg={restpic4}
+                    foodName="Wow Momos"
+                    foodRating="4.3"
+                    deliveryTime="30-35 mins"
+                    FoodContent="Chinese Manchurian, Soup & Noddles with Chicken Balls "
+                    location="Bandra East"
+                    offerText="30% Off upto ₹100"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <RestaurantCard />
+                  <RestaurantCard
+                    foodImg={restpic5}
+                    foodName="Mojo Pizza"
+                    foodRating="4.3"
+                    deliveryTime="30-35 mins"
+                    FoodContent="Chinese Manchurian, Soup & Noddles with Chicken Balls "
+                    location="Bandra East"
+                    offerText="30% Off upto ₹100"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <RestaurantCard />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <RestaurantCard />
+                  <RestaurantCard
+                    foodImg={restpic6}
+                    foodName="Domino's"
+                    foodRating="4.3"
+                    deliveryTime="30-35 mins"
+                    FoodContent="Chinese Manchurian, Soup & Noddles with Chicken Balls "
+                    location="Bandra East"
+                    offerText="30% Off upto ₹100"
+                  />
                 </SwiperSlide>
               </Swiper>
             </div>
