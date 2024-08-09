@@ -1,4 +1,6 @@
 import React from "react";
+
+// image imports
 import dish1 from "../assets/swiggy/dishes/dish1.jpeg";
 import dish2 from "../assets/swiggy/dishes/dish2.jpeg";
 import dish3 from "../assets/swiggy/dishes/dish3.jpeg";
@@ -8,7 +10,6 @@ import dish6 from "../assets/swiggy/dishes/dish6.jpeg";
 import dish7 from "../assets/swiggy/dishes/dish7.jpeg";
 import dish8 from "../assets/swiggy/dishes/dish8.jpeg";
 import dish9 from "../assets/swiggy/dishes/dish9.jpeg";
-
 import restpic1 from "../assets/swiggy/restaurant/pic1.jpeg";
 import restpic2 from "../assets/swiggy/restaurant/pic2.jpeg";
 import restpic3 from "../assets/swiggy/restaurant/pic3.jpeg";
@@ -25,7 +26,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+
+// component imports
 import RestaurantCard from "./RestaurantCard";
+import DishSection from "./DishSection";
 
 function BodySection() {
   /*
@@ -69,49 +73,31 @@ function BodySection() {
                 onSwiper={(swiper) => console.log(swiper)}
               >
                 <SwiperSlide>
-                  <div className="dishCardWrap">
-                    <img src={dish1} alt="" />
-                  </div>
+                  <DishSection dishImage={dish1} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="dishCardWrap">
-                    <img src={dish2} alt="" />
-                  </div>
+                  <DishSection dishImage={dish2} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="dishCardWrap">
-                    <img src={dish3} alt="" />
-                  </div>
+                  <DishSection dishImage={dish3} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="dishCardWrap">
-                    <img src={dish4} alt="" />
-                  </div>
+                  <DishSection dishImage={dish4} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="dishCardWrap">
-                    <img src={dish5} alt="" />
-                  </div>
+                  <DishSection dishImage={dish5} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="dishCardWrap">
-                    <img src={dish6} alt="" />
-                  </div>
+                  <DishSection dishImage={dish6} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="dishCardWrap">
-                    <img src={dish7} alt="" />
-                  </div>
+                  <DishSection dishImage={dish7} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="dishCardWrap">
-                    <img src={dish8} alt="" />
-                  </div>
+                  <DishSection dishImage={dish8} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="dishCardWrap">
-                    <img src={dish9} alt="" />
-                  </div>
+                  <DishSection dishImage={dish9} />
                 </SwiperSlide>
               </Swiper>
             </div>
