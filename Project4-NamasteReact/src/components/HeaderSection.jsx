@@ -22,7 +22,7 @@ function HeaderSection() {
                 <li className="px-4 cursor-pointer">
                   <a href="">
                     <span>
-                      <i class="fa-solid fa-magnifying-glass pr-2"></i>
+                      <i className="fa-solid fa-magnifying-glass pr-2"></i>
                     </span>
                     Search
                   </a>
@@ -30,7 +30,7 @@ function HeaderSection() {
                 <li className="px-4 cursor-pointer">
                   <a href="">
                     <span>
-                      <i class="fa-solid fa-user pr-2"></i>
+                      <i className="fa-solid fa-user pr-2"></i>
                     </span>
                     Sign In
                   </a>
@@ -38,7 +38,7 @@ function HeaderSection() {
                 <li className="px-4 cursor-pointer">
                   <a href="">
                     <span>
-                      <i class="fa-solid fa-cart-shopping pr-2"></i>
+                      <i className="fa-solid fa-cart-shopping pr-2"></i>
                     </span>
                     Cart
                   </a>

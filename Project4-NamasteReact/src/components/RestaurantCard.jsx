@@ -2,6 +2,7 @@ import React from "react";
 
 import star from "../assets/swiggy/star.png";
 import clock from "../assets/swiggy/clock.png";
+import mapLoc from "../assets/swiggy/location.png";
 
 import "./componentStyles/restaurantCardStyle.css";
 
@@ -26,7 +27,10 @@ function RestaurantCard({
               alt=""
             />
             <div className="imgOverlay ">
-              <p className="text-white text-2xl uppercase"> {offerText} </p>
+              <p className="text-white text-xl font-semibold uppercase">
+                {" "}
+                {offerText}{" "}
+              </p>
             </div>
           </div>
           <div className="cardContentWrap px-4 py-3 ">
@@ -41,9 +45,12 @@ function RestaurantCard({
                 <p className="text-lg">{deliveryTime}</p>
               </div>
             </div>
-            <p className="mt-2 leading-tight text-lg text-stone-500   ">
-              <span className="  text-justify  ">{FoodContent}</span>
-              <br /> <span>{location}</span>
+            <p className="mt-2 leading-tight text-lg text-stone-500  ">
+              {FoodContent}
+            </p>
+            <p className="flex mt-4">
+              <img src={mapLoc} className="mr-2 iconBg" alt="" />
+              {location}
             </p>
           </div>
         </div>
