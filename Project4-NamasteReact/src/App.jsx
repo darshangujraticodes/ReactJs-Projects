@@ -1,5 +1,6 @@
 import AppLayout from "./pages/AppLayout";
 import TailwindPractice from "./pages/TailwindPractice";
+import "./index.css";
 
 function App() {
   return (

@@ -1,18 +1,18 @@
 /* swiper js */
 
 .swiper-wrapper {
-  padding-top: 40px;
+  @apply pt-6 md:pt-10;
 }
 
 .swiper-button-prev {
   top: 1px;
-  right: 40px !important;
+  right: 65px !important;
   left: unset;
 }
 
 .swiper-button-next {
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 25px;
 }
 
 .swiper-button-prev,

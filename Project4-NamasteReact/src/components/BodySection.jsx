@@ -46,7 +46,7 @@ function BodySection() {
   return (
     <>
       <div className="dishSection mt-[120px]  relative z-10">
-        <div className="container mx-auto">
+        <div className="container mx-4 md:mx-auto">
           <div className="dishSliderWrap">
             <div className="textWrap mb-5">
               <h1 className="text-3xl font-medium tracking-wider">
@@ -56,13 +56,25 @@ function BodySection() {
 
             <div className="dishCarousel  ">
               <Swiper
-                spaceBetween={30}
-                slidesPerView={7}
                 navigation={true}
                 modules={[Navigation]}
                 className="mySwiper"
                 onSlideChange={() => console.log("slide change")}
                 onSwiper={(swiper) => console.log(swiper)}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 3,
+                    // spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 4,
+                    // spaceBetween: 40,
+                  },
+                  1024: {
+                    slidesPerView: 7,
+                    // spaceBetween: 50,
+                  },
+                }}
               >
                 {bannerDishList.map((foodItem) => (
                   <SwiperSlide key={foodItem.id}>
@@ -81,7 +93,7 @@ function BodySection() {
       </div>
 
       <div className="topRestaurantSliderSection">
-        <div className="container mx-auto">
+        <div className="container mx-4 md:mx-auto">
           <div className="restaurantContentWrap">
             <div className="headContentWrap mb-5">
               <h1 className="text-3xl font-medium tracking-wider">
@@ -91,11 +103,24 @@ function BodySection() {
 
             <div className="restuarantSliderWrap">
               <Swiper
-                slidesPerView={4}
                 navigation={true}
                 modules={[Navigation]}
                 onSlideChange={() => console.log("slide change")}
                 onSwiper={(swiper) => console.log(swiper)}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                    // spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    // spaceBetween: 40,
+                  },
+                  1024: {
+                    slidesPerView: 4,
+                    // spaceBetween: 50,
+                  },
+                }}
               >
                 {mumbaiRestaurantList.map((hotelItem) => (
                   <SwiperSlide key={hotelItem.info.id}>

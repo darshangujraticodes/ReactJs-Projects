@@ -20,7 +20,7 @@ function HeaderSection() {
             </div>
             <div className="menuWrap flex  items-center">
               <ul className="flex  items-center">
-                <li className="px-4 cursor-pointer  ">
+                <li className="px-5 cursor-pointer  ">
                   <NavLink
                     to="/"
                     className={({ isActive }) =>
@@ -36,7 +36,7 @@ function HeaderSection() {
                     Home
                   </NavLink>
                 </li>
-                <li className="px-4 cursor-pointer  ">
+                <li className="px-5 cursor-pointer  ">
                   <NavLink
                     to="/search"
                     className={({ isActive }) =>
@@ -51,7 +51,7 @@ function HeaderSection() {
                     Search
                   </NavLink>
                 </li>
-                <li className="px-4 cursor-pointer">
+                <li className="px-5 cursor-pointer">
                   <NavLink
                     to="/faq"
                     className={({ isActive }) =>
@@ -66,7 +66,7 @@ function HeaderSection() {
                     FAQ
                   </NavLink>
                 </li>
-                <li className="px-4 cursor-pointer">
+                <li className="px-5 cursor-pointer">
                   <NavLink
                     to="/login"
                     className={({ isActive }) =>
@@ -81,7 +81,7 @@ function HeaderSection() {
                     Sign In
                   </NavLink>
                 </li>
-                <li className="px-4 cursor-pointer">
+                <li className="pl-5 cursor-pointer">
                   <NavLink
                     to="/cart"
                     className={({ isActive }) =>
