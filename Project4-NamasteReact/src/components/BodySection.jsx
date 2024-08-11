@@ -1,14 +1,5 @@
 import React from "react";
 
-// image imports
-
-import restpic1 from "../assets/swiggy/restaurant/pic1.jpeg";
-import restpic2 from "../assets/swiggy/restaurant/pic2.jpeg";
-import restpic3 from "../assets/swiggy/restaurant/pic3.jpeg";
-import restpic4 from "../assets/swiggy/restaurant/pic4.jpeg";
-import restpic5 from "../assets/swiggy/restaurant/pic5.jpeg";
-import restpic6 from "../assets/swiggy/restaurant/pic6.jpeg";
-
 // Import Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,14 +9,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "./componentStyles/SwiperStyle.css";
 
 // component imports
 import RestaurantCard from "./RestaurantCard";
 import DishSection from "./DishSection";
 
 // data import
-import { mumbaiRestaurantList } from "../utils/RestaurantList";
-import { bannerDishList } from "../utils/RestaurantDishList";
+import { bannerDishList, mumbaiRestaurantList } from "../utils/RestaurantData";
+
+// constant import
+import { baseImgURL } from "../utils/config";
 
 function BodySection() {
   /*
@@ -49,11 +43,6 @@ function BodySection() {
 
   */
 
-  const baseImgURL =
-    "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-
-  console.log(baseImgURL + bannerDishList[0].imageId);
-
   return (
     <>
       <div className="dishSection mt-[120px]  relative z-10">
@@ -65,7 +54,7 @@ function BodySection() {
               </h1>
             </div>
 
-            <div className="dishCarousel ">
+            <div className="dishCarousel  ">
               <Swiper
                 spaceBetween={30}
                 slidesPerView={7}
