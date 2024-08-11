@@ -75,6 +75,43 @@ export const bannerDishList = [
     description: "Chinese",
   },
   {
+    id: "750591",
+    imageId:
+      "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png",
+    action: {
+      link: "https://www.swiggy.com/collections/83639?collection_id=83639&search_context=biryani&tags=layout_CCS_Biryani&type=rcv2",
+      text: "Biryani",
+      type: "WEBLINK",
+    },
+    entityType: "BANNER",
+    accessibility: {
+      altText: "restaurants curated for biryani",
+      altTextCta: "open",
+    },
+    entityId:
+      "swiggy://collectionV2?collection_id=83639&tags=layout_CCS_Biryani&search_context=biryani",
+
+    description: "Biryani",
+  },
+  {
+    id: "750225",
+    imageId:
+      "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Salad.png",
+    action: {
+      link: "https://www.swiggy.com/collections/80394?collection_id=80394&tags=layout_CCS_Salad&type=rcv2",
+      text: "Salad",
+      type: "WEBLINK",
+    },
+    entityType: "BANNER",
+    accessibility: {
+      altText: "restaurant curated for salad",
+      altTextCta: "open",
+    },
+    entityId: "swiggy://collectionV2?collection_id=80394&tags=layout_CCS_Salad",
+
+    description: "Salad",
+  },
+  {
     id: "749868",
     imageId:
       "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_cake.png",
@@ -167,25 +204,7 @@ export const bannerDishList = [
 
     description: "Pastry",
   },
-  {
-    id: "750591",
-    imageId:
-      "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png",
-    action: {
-      link: "https://www.swiggy.com/collections/83639?collection_id=83639&search_context=biryani&tags=layout_CCS_Biryani&type=rcv2",
-      text: "Biryani",
-      type: "WEBLINK",
-    },
-    entityType: "BANNER",
-    accessibility: {
-      altText: "restaurants curated for biryani",
-      altTextCta: "open",
-    },
-    entityId:
-      "swiggy://collectionV2?collection_id=83639&tags=layout_CCS_Biryani&search_context=biryani",
 
-    description: "Biryani",
-  },
   {
     id: "750639",
     imageId:
@@ -333,23 +352,5 @@ export const bannerDishList = [
     entityId: "80463",
 
     description: "Noodles",
-  },
-  {
-    id: "750225",
-    imageId:
-      "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Salad.png",
-    action: {
-      link: "https://www.swiggy.com/collections/80394?collection_id=80394&tags=layout_CCS_Salad&type=rcv2",
-      text: "Salad",
-      type: "WEBLINK",
-    },
-    entityType: "BANNER",
-    accessibility: {
-      altText: "restaurant curated for salad",
-      altTextCta: "open",
-    },
-    entityId: "swiggy://collectionV2?collection_id=80394&tags=layout_CCS_Salad",
-
-    description: "Salad",
   },
 ];

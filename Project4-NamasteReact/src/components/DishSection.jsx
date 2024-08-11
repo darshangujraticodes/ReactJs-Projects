@@ -1,11 +1,11 @@
 import React from "react";
 
-function DishSection({ urlText, dishImage, dishImageText }) {
+function DishSection({ dishUrl, dishImage, dishImageText }) {
   return (
     <>
-      <a href={urlText} className=" cursor-pointer">
+      <a href={dishUrl} className=" cursor-pointer">
         <div className="dishCardWrap">
-          <img src={dishImage} alt={dishImageText} />
+          <img src={dishImage} alt={`${dishImageText + " Image"}`} />
         </div>
       </a>
     </>

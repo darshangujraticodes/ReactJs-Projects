@@ -24,12 +24,11 @@ function RestaurantCard({
             <img
               src={foodImg}
               className=" w-full object-center object-cover h-[175px] rounded-3xl  relative   "
-              alt=""
+              alt={`${foodName + " Image"}`}
             />
             <div className="imgOverlay ">
               <p className="text-white text-xl font-semibold uppercase">
-                {" "}
-                {offerText}{" "}
+                {offerText}
               </p>
             </div>
           </div>

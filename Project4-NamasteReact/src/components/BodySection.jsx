@@ -24,8 +24,8 @@ import RestaurantCard from "./RestaurantCard";
 import DishSection from "./DishSection";
 
 // data import
-import { mumbaiRestaurantList } from "../Data/RestaurantList";
-import { bannerDishList } from "../Data/RestaurantDishList";
+import { mumbaiRestaurantList } from "../utils/RestaurantList";
+import { bannerDishList } from "../utils/RestaurantDishList";
 
 function BodySection() {
   /*
@@ -78,7 +78,9 @@ function BodySection() {
                 {bannerDishList.map((foodItem) => (
                   <SwiperSlide key={foodItem.id}>
                     <DishSection
+                      dishUrl={foodItem.action.link}
                       dishImage={`${baseImgURL + foodItem.imageId}`}
+                      dishImageText={foodItem.description}
                     />
                   </SwiperSlide>
                 ))}
@@ -109,6 +111,7 @@ function BodySection() {
                 {mumbaiRestaurantList.map((hotelItem) => (
                   <SwiperSlide key={hotelItem.info.id}>
                     <RestaurantCard
+                      foodUrl={hotelItem.cta.link}
                       foodImg={`${
                         baseImgURL + hotelItem.info.cloudinaryImageId
                       }`}
