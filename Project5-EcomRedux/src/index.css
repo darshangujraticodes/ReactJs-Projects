@@ -1,0 +1,111 @@
+body {
+  background: #262626;
+  color: #fff;
+}
+
+h1 {
+  width: 450px;
+  text-align: right;
+  margin: 20px 0;
+}
+
+.dataVal {
+  margin: 15px 35px 20px 20px;
+  font-size: 40px;
+  font-weight: 600;
+  width: 80px;
+}
+
+.btnData {
+  padding: 10px 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+.inputFieldData {
+  width: 250px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+/* grid test home work  */
+
+.gridContainerWrap {
+  display: grid;
+  gap: 10px;
+
+  /* repeat is used to repeat and 3 denotes column and each column has 1fr width  */
+  /* grid-template-columns: 1fr 1fr 1fr;   3 times fr for 3 column display */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header,
+.footer {
+  /* grid-column-start: 1;
+  grid-column-end: -1; */
+  /* but above 2 lines can be written in 1 line start-point/end-point  */
+  grid-column: 1/-1;
+}
+
+.sidebar {
+  grid-row: 2/4;
+}
+
+.content1 {
+  grid-column: 2/-1;
+}
+
+.gridItem {
+  width: 100%;
+  padding: 20px;
+  background: #f5f5f5;
+  color: #000;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* homework 2 */
+
+.gridContainerWrap2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.subItemA {
+  grid-column: 1/4;
+}
+
+.subItemB {
+  /* grid-row: 1/4; */
+  grid-row: span 4;
+}
+
+.subItemC {
+  grid-row: span 2;
+}
+
+.subItemD {
+  grid-column: span 2;
+}
+
+.subItemG {
+  grid-column: span 3;
+}
+
+.gridSubItem2 {
+  width: 100%;
+  padding: 20px;
+  background: #f5f5f5;
+  color: #000;
+  border-radius: 8px;
+  font-weight: 600;
+}
