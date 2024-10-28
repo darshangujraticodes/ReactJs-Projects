@@ -1,6 +1,50 @@
+:root {
+  --offwhite: #f5f5f5;
+  --light-gray: #ededf0;
+  --red-Pink: #fd366e;
+  --dark-grey: #19191d;
+  --dark-blackshade: #262626;
+
+  /* default is light mode */
+  --background-color: #ededf0;
+  --text-color: #262626;
+
+  --btn-background: #262626;
+  --btn-text: #ededf0;
+
+  --nav-text: #262626;
+
+  --themebtn-background: #262626;
+  --themebtn-text: #ededf0;
+}
+
+[data-theme="dark"] {
+  --background-color: #262626;
+  --text-color: #ededf0;
+
+  --btn-background: #fd366e;
+  --btn-text: #262626;
+
+  --nav-text: #ededf0;
+
+  --themebtn-background: #ededf0;
+  --themebtn-text: #262626;
+}
+
 body {
-  background: #262626;
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.enquireBtn {
+  background: var(--btn-background);
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 2px solid var(--btn-background);
+  color: #ededf0;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
 }
 
 h1 {
@@ -108,4 +152,71 @@ h1 {
   color: #000;
   border-radius: 8px;
   font-weight: 600;
+}
+
+/* homework 3 */
+
+.gridContainerWrap3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.subgridcontent1 {
+  width: 100%;
+  padding: 20px;
+  background: #f5f5f5;
+  color: #000;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.subgrid1 {
+  grid-column: 1/-1;
+}
+
+.subgrid2 {
+  /* grid-row: 2/4; both will apply same css  grid-row: span 2;  */
+  grid-row: span 2;
+}
+
+.subgrid4 {
+  grid-row: span 2;
+}
+
+.subgrid6 {
+  grid-column: 1/4;
+}
+
+/* ----------- */
+
+.lightModeLink {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  background: transparent;
+}
+
+.textRedPink {
+  color: var(--red-Pink);
+}
+
+.textDarkBlack {
+  color: var(--nav-text);
+}
+
+.themeBtn {
+  border: none;
+  display: flex;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  background: var(--themebtn-background);
+  color: var(--themebtn-text);
+}
+
+.themeIcon img {
+  width: 20px;
+  height: 20px;
+  /* margin-right: 10px; */
 }
