@@ -110,7 +110,7 @@ h1 {
 .gridItem {
   width: 100%;
   padding: 20px;
-  background: #f5f5f5;
+  background: #fd366e;
   color: #000;
   border-radius: 8px;
   font-weight: 600;
@@ -148,8 +148,8 @@ h1 {
 .gridSubItem2 {
   width: 100%;
   padding: 20px;
-  background: #f5f5f5;
-  color: #000;
+  background: #fd366e;
+  color: #fff;
   border-radius: 8px;
   font-weight: 600;
 }
@@ -165,8 +165,8 @@ h1 {
 .subgridcontent1 {
   width: 100%;
   padding: 20px;
-  background: #f5f5f5;
-  color: #000;
+  background: #fd366e;
+  color: #fff;
   border-radius: 8px;
   font-weight: 600;
 }

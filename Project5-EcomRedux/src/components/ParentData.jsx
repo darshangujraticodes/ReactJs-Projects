@@ -14,6 +14,8 @@ import {
 function ParentData() {
   const dataVal = useSelector((state) => state.data);
 
+  const dispatchdata = useDispatch();
+
   return (
     <>
       <div className=" container wrapper mt-5">

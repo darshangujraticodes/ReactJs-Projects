@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContextProvider";
+import ParentData from "../components/ParentData";
 
 function PageLayout() {
   const { lightThemeMode, setLightThemeMode } = useContext(ThemeContext);
@@ -22,6 +23,8 @@ function PageLayout() {
     <>
       <Navbar />
       <Outlet />
+
+      <ParentData />
     </>
   );
 }
