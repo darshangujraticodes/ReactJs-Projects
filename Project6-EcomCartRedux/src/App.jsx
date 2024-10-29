@@ -1,10 +1,9 @@
-import viteLogo from "/vite.svg";
-import "./App.css";
+import PageLayout from "./pages/PageLayout";
 
 function App() {
   return (
     <>
-      <div></div>
+      <PageLayout />
     </>
   );
 }
